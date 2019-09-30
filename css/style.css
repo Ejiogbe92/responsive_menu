@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Teko:300,400,500&display=swap');
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+header {
+
+    background: #2c3e50;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+
+}
+
+
+header #button-menu {
+
+    font-size: 30px;
+    color: #eccc68;;
+    cursor: pointer;
+
+}
+
+
+.navegacion {
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 100vh;
+    background: rgba(0,0,0,.0);
+} 
+
+
+.navegacion ul {
+
+    width: 250px;
+    height: 100%;
+    background: #2c3e50;
+    list-style: none;
+
+    position: absolute;
+    top: 0;
+    left: -320px;
+    transition: left .7s;
+}
+
+
+.navegacion .menu li.title-menu {
+
+    padding: 20px;
+    background: #5f6f81;
+    color: #ff9;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+.navegacion .menu a {
+
+    display: block;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #ff9;
+}
+
+
+.navegacion .menu a:hover {
+
+    background: #eccc68;
+    color: #000;
+}
+
+
+.navegacion .menu li span {
+
+    margin-right: 12px;
+}
+
+
+
+.navegacion .menu .item-submenu  > a::after {
+
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    content: "\f105";
+    float: right;
+    color: #ff9;
+
+}
+
+
+
+
+        /*===== Sub-menu ======*/
+
+.navegacion .submenu li.title-menu {
+
+    background: #fff;
+    color: #575d69;
+}
+
+
+.submenu li.go-back {
+
+    padding: 10px 20px;
+    background: #5f6f81;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.navegacion .submenu li.go-back::before{
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\f0d9';
+    margin-right: 10px;
+}
+
+
+
+@media screen and (max-width:320px){
+    
+    .navegacion ul {
+        
+        width: 100%;
+    }
+
+}
+/*
+
+
+.sidebar h2 {
+border-bottom: 1px solid rgba(0,0,0,.3);
+text-align: center;
+margin: 0;
+padding: 10px;
+background: #45aaf2;
+
+}
+
+
+
+.sidebar ul {
+
+margin: 0px;
+padding: 0px;
+}
+
+
+
+.sidebar ul li {
+
+list-style: none;
+
+
+}
+
+
+.sidebar ul li a {
+
+background: #2c3e50;
+color: #fff;
+display: block;
+width: 180px;
+padding: 10px;
+text-decoration: none;
+border-bottom: 1px solid rgba(0,0,0,.3);
+
+transition: all 0.4s;
+
+}
+
+
+.sidebar ul li a:hover  {
+
+background: #45aaf2;
+border-left: 1px solid #eee;
+}
+
+
+.sidebar-btn {
+
+display: inline-block;
+vertical-align: middle;
+width: 20px;
+height: 15px;
+cursor: pointer;
+margin: 20px;
+position: absolute;
+top: 0;
+right: -60px;
+transition: all .3s;
+}
+
+
+.sidebar-btn span {
+
+height: 1px;
+background: #111;
+margin-bottom: 5px;
+display: block;
+cursor: pointer;
+}
+
+
+
+.sidebar-btn span:nth-child(2){
+
+width: 75%;
+}
+
+.sidebar-btn span:nth-child(3){
+
+width: 50%;
+}
+*/
+
